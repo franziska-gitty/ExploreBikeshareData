@@ -5,7 +5,7 @@ Friday, 10 July 2020
 Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Calculate statistics and build an interactive environment where a user chooses the data and filter for a dataset to analyze (month, day).
 
 ### Files used
 Include the files used
