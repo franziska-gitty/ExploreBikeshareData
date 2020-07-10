@@ -221,6 +221,7 @@ def main():
         trip_duration_stats(df, month, day)
         user_stats(df, month, day, city)
 
+        # restart query or not
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
