@@ -35,11 +35,8 @@ def get_filters():
         print("Oops, you entered a wrong day. Please check if you have written the day correctly!")
         day = input("\nTry Again: Which day? Please enter one day from Monday to Sunday:").lower()
 
-
-
     print('-'*40)
     return city, month, day
-
 
 def load_data(city, month, day):
     """
@@ -56,9 +53,7 @@ def load_data(city, month, day):
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
 
-
     # Showing 5 lines of raw data
-
     # get user input
     raw_data = input("\nWould you like to see 5 lines of raw data for {}? Please enter 'yes' or 'no': ".format(city.capitalize())).lower()
 
@@ -135,7 +130,6 @@ def time_stats(df, month, day):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
 def station_stats(df, month, day):
     """Displays statistics on the most popular stations and trip."""
 
@@ -158,7 +152,6 @@ def station_stats(df, month, day):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
 def trip_duration_stats(df, month, day):
     """Displays statistics on the total and average trip duration."""
 
@@ -180,7 +173,6 @@ def trip_duration_stats(df, month, day):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def user_stats(df, month, day, city):
     """Displays statistics on bikeshare users."""
