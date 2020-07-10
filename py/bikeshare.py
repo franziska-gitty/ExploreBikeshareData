@@ -66,14 +66,14 @@ def load_data(city, month, day):
     checkRawDataInput(raw_data)
 
     # displays 5 lines of raw data
-    row_index_start = 0
-    row_index_end = 5
+    row_id_start = 0
+    row_id_end = 5
     while raw_data != "no":
         print(df[row_index_start:row_index_end])
         raw_data = input("\nWould you like to see 5 further lines of raw data for {}? Please enter 'yes' or 'no': ".format(city.capitalize())).lower()
         checkRawDataInput(raw_data)
-        row_index_start +=5
-        row_index_end +=5
+        row_id_start +=5
+        row_id_end +=5
 
     # convert the Start Time column to datetime
     df["Start Time"] = pd.to_datetime(df["Start Time"])
